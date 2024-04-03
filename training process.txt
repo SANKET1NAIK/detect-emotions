@@ -1,0 +1,78 @@
+PS C:\Users\hp\OneDrive\Desktop\face emotions>  & 'c:\Users\hp\anaconda4\envs\gputest1\python.exe' 'c:\Users\hp\.vscode\extensions\ms-python.debugpy-2024.2.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '51775' '--' 'c:\Users\hp\OneDrive\Desktop\face emotions\main.py' 
+2024-04-03 21:43:24.566841: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-04-03 21:43:25.645314: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Found 26921 images belonging to 7 classes.
+Found 7066 images belonging to 7 classes.
+Found 1900 images belonging to 7 classes.
+c:\Users\hp\anaconda4\envs\gputest1\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:99: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(
+2024-04-03 21:43:29.277777: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/10
+Traceback (most recent call last):
+  File "c:\Users\hp\OneDrive\Desktop\face emotions\main.py", line 70, in <module>
+    history = model.fit(
+              ^^^^^^^^^^
+  File "c:\Users\hp\anaconda4\envs\gputest1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "c:\Users\hp\anaconda4\envs\gputest1\Lib\site-packages\keras\src\backend\tensorflow\nn.py", line 553, in categorical_crossentropy
+    raise ValueError(
+ValueError: Arguments `target` and `output` must have the same shape. Received: target.shape=(None, 7), output.shape=(None, 5)
+PS C:\Users\hp\OneDrive\Desktop\face emotions>  c:; cd 'c:\Users\hp\OneDrive\Desktop\face emotions'; & 'c:\Users\hp\anaconda4\envs\gputest1\python.exe' 'c:\Users\hp\.vscode\extensions\ms-python.debugpy-2024.2.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher' '51794' '--' 'c:\Users\hp\OneDrive\Desktop\face emotions\main.py'
+2024-04-03 21:44:45.679405: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-04-03 21:44:46.560479: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Found 26921 images belonging to 7 classes.
+Found 7066 images belonging to 7 classes.
+Found 1900 images belonging to 7 classes.
+c:\Users\hp\anaconda4\envs\gputest1\Lib\site-packages\keras\src\layers\convolutional\base_conv.py:99: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(
+2024-04-03 21:44:49.913851: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/10
+c:\Users\hp\anaconda4\envs\gputest1\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:120: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+842/842 ━━━━━━━━━━━━━━━━━━━━ 318s 373ms/step - accuracy: 0.2868 - loss: 1.7572 - val_accuracy: 0.4029 - val_loss: 1.5473
+Epoch 2/10
+2024-04-03 21:50:08.475939: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+         [[{{node IteratorGetNext}}]]
+c:\Users\hp\anaconda4\envs\gputest1\Lib\contextlib.py:158: UserWarning: Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches. You may need to use the `.repeat()` function when building your dataset.
+  self.gen.throw(typ, value, traceback)
+2024-04-03 21:50:08.496567: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+         [[{{node IteratorGetNext}}]]
+842/842 ━━━━━━━━━━━━━━━━━━━━ 0s 52us/step - accuracy: 0.0000e+00 - loss: 0.0000e+00 - val_accuracy: 0.0000e+00 - val_loss: 0.0000e+00
+Epoch 3/10
+842/842 ━━━━━━━━━━━━━━━━━━━━ 22s 26ms/step - accuracy: 0.4227 - loss: 1.4981 - val_accuracy: 0.4837 - val_loss: 1.3526
+Epoch 4/10
+2024-04-03 21:50:30.825217: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence       
+         [[{{node IteratorGetNext}}]]
+2024-04-03 21:50:30.830613: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence       
+         [[{{node IteratorGetNext}}]]
+842/842 ━━━━━━━━━━━━━━━━━━━━ 0s 12us/step - accuracy: 0.0000e+00 - loss: 0.0000e+00 - val_accuracy: 0.0000e+00 - val_loss: 0.0000e+00
+Epoch 5/10
+842/842 ━━━━━━━━━━━━━━━━━━━━ 28s 33ms/step - accuracy: 0.4732 - loss: 1.3745 - val_accuracy: 0.5127 - val_loss: 1.3092
+Epoch 6/10
+2024-04-03 21:50:58.954706: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+         [[{{node IteratorGetNext}}]]
+2024-04-03 21:50:58.970620: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+         [[{{node IteratorGetNext}}]]
+842/842 ━━━━━━━━━━━━━━━━━━━━ 0s 49us/step - accuracy: 0.0000e+00 - loss: 0.0000e+00 - val_accuracy: 0.0000e+00 - val_loss: 0.0000e+00
+Epoch 7/10
+842/842 ━━━━━━━━━━━━━━━━━━━━ 51s 60ms/step - accuracy: 0.5039 - loss: 1.2967 - val_accuracy: 0.5331 - val_loss: 1.2299
+Epoch 8/10
+2024-04-03 21:51:49.681093: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence       
+         [[{{node IteratorGetNext}}]]
+2024-04-03 21:51:49.691170: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence       
+         [[{{node IteratorGetNext}}]]
+842/842 ━━━━━━━━━━━━━━━━━━━━ 0s 24us/step - accuracy: 0.0000e+00 - loss: 0.0000e+00 - val_accuracy: 0.0000e+00 - val_loss: 0.0000e+00
+Epoch 9/10
+842/842 ━━━━━━━━━━━━━━━━━━━━ 32s 37ms/step - accuracy: 0.5186 - loss: 1.2547 - val_accuracy: 0.5388 - val_loss: 1.2306
+Epoch 10/10
+2024-04-03 21:52:21.493890: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence       
+         [[{{node IteratorGetNext}}]]
+2024-04-03 21:52:21.500345: W tensorflow/core/framework/local_rendezvous.cc:404] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence       
+         [[{{node IteratorGetNext}}]]
+842/842 ━━━━━━━━━━━━━━━━━━━━ 0s 25us/step - accuracy: 0.0000e+00 - loss: 0.0000e+00 - val_accuracy: 0.0000e+00 - val_loss: 0.0000e+00
+221/221 ━━━━━━━━━━━━━━━━━━━━ 2s 11ms/step - accuracy: 0.5241 - loss: 1.2700 
+Validation Accuracy: 0.538777232170105
+60/60 ━━━━━━━━━━━━━━━━━━━━ 10s 168ms/step
+Test Accuracy: 0.47157894736842104
